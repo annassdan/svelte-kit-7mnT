@@ -1,5 +1,4 @@
 <script>
-  import "../app.postcss";
   import NavBar from "../components/NavBar.svelte";
   import FootBar from "../components/FootBar.svelte";
 </script>
