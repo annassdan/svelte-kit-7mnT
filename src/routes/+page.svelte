@@ -57,7 +57,8 @@
             </button>
         </div>
         <div class="flex flex-col items-end py-6 w-full items-center">
-            <span class="text-sm">INFORMASI WAKTU PENGAMBILAN STNK, PLAT & BPKB UNIT KENDARAAN <a href="" class="text-sky-600">Klik Disini</a></span>
+            <span class="text-sm">INFORMASI WAKTU PENGAMBILAN STNK,</span> <br>
+            <span>PLAT & BPKB UNIT KENDARAAN <a href="" class="text-sky-600">Klik Disini</a></span>
 <!--            <span class="text-xs"></span>-->
         </div>
     </div>
