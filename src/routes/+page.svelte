@@ -22,7 +22,7 @@
         searching = true;
         const searchParam = value.trim();
 
-        fetch(`http://localhost:1337/api/cek-stnks?filters[$or][0][nomor_rangka][$containsi]=${searchParam}&filters[$or][1][nama_customer][$containsi]=${searchParam}`, {
+        fetch(`https://stnk-backoffice.up.railway.app/api/cek-stnks?filters[$or][0][nomor_rangka][$containsi]=${searchParam}&filters[$or][1][nama_customer][$containsi]=${searchParam}`, {
             method: 'GET',
             headers: {'Content-Type': 'application/json',}
         })
