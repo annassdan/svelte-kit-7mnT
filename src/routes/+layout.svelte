@@ -1,53 +1,17 @@
 <script>
-	import Header from './Header.svelte';
-	import './styles.css';
+  import "../app.postcss";
+  import NavBar from "../components/NavBar.svelte";
+  import FootBar from "../components/FootBar.svelte";
 </script>
 
-<div class="app">
-	<Header />
+<div class="flex flex-col w-full h-full justify-between bg-sky-50">
 
-	<main>
-		<slot />
-	</main>
+    <div class="flex flex-col">
+        <NavBar />
+        <div class="h-fit mt-20 pb-5 pt-20 ">
 
-	<footer>
-		<p>visit <a href="https://kit.svelte.dev">kit.svelte.dev</a> to learn SvelteKit</p>
-	</footer>
+            <slot />
+        </div>
+    </div>
+    <FootBar />
 </div>
-
-<style>
-	.app {
-		display: flex;
-		flex-direction: column;
-		min-height: 100vh;
-	}
-
-	main {
-		flex: 1;
-		display: flex;
-		flex-direction: column;
-		padding: 1rem;
-		width: 100%;
-		max-width: 64rem;
-		margin: 0 auto;
-		box-sizing: border-box;
-	}
-
-	footer {
-		display: flex;
-		flex-direction: column;
-		justify-content: center;
-		align-items: center;
-		padding: 12px;
-	}
-
-	footer a {
-		font-weight: bold;
-	}
-
-	@media (min-width: 480px) {
-		footer {
-			padding: 12px 0;
-		}
-	}
-</style>
